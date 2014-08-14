@@ -12,7 +12,7 @@
 #include <boost/lexical_cast.hpp>
 
 // Internal
-#include "eloquent/Global/Logging.h"
+#include "Eloquent/Global/Logging.h"
 #include "ConsoleWriter.h"
 
 ///////////////////////////////////////////////////////////////////////////////

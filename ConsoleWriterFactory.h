@@ -15,7 +15,7 @@
 #include <boost/property_tree/ptree.hpp>
 
 // Internal
-#include "eloquent/Extensions/IOExtensionFactory.h"
+#include "Eloquent/Extensions/IOExtensionFactory.h"
 
 namespace Eloquent {
 	///////////////////////////////////////////////////////////////////////////////
