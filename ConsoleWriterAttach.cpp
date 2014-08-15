@@ -4,8 +4,9 @@
 //
 
 // Internal
-#include "ConsoleWriterAttach.h"
+#include "Eloquent/Attach.h"
+#include "ConsoleWriterFactory.h"
 
 extern "C" void* Attach( void ) {
-	return new Eloquent::ConsoleWriterFactory( Eloquent::EXTENSION_NAME, Eloquent::EXTENSION_VERSION, Eloquent::EXTENSION_AUTHOR, Eloquent::EXTENSION_TYPE, Eloquent::EXTENSION_KEYS );
+	return new Eloquent::ConsoleWriterFactory();
 }

@@ -10,13 +10,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 // ConsoleWriterFactory : IOExtensionFactory
 ///////////////////////////////////////////////////////////////////////////////
-Eloquent::ConsoleWriterFactory::ConsoleWriterFactory( const std::string& i_Name
-							  , const std::string& i_Version
-							  , const std::string& i_Author
-							  , const std::string& i_Type
-							  , const std::vector<std::string>& i_Keys )
-: IOExtensionFactory( i_Name, i_Version, i_Author, i_Type, i_Keys )
-{}
+Eloquent::ConsoleWriterFactory::ConsoleWriterFactory() {}
+Eloquent::ConsoleWriterFactory::~ConsoleWriterFactory() {}
 	
 Eloquent::IOExtension* Eloquent::ConsoleWriterFactory::New( const boost::property_tree::ptree::value_type& i_Config
 														   , std::mutex& i_LogMutex
@@ -26,5 +21,5 @@ Eloquent::IOExtension* Eloquent::ConsoleWriterFactory::New( const boost::propert
 														   , std::queue<QueueItem>& i_Queue
 														   , int& i_NumWriters )
 {
-	return reinterpret_cast<IOExtension*>( new ConsoleWriter( i_Config, i_LogMutex, i_Log, i_QueueMutex, i_QueueCV, i_Queue, i_NumWriters ) );
+	return new ConsoleWriter( i_Config, i_LogMutex, i_Log, i_QueueMutex, i_QueueCV, i_Queue, i_NumWriters );
 }

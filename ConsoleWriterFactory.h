@@ -24,11 +24,8 @@ namespace Eloquent {
 	class ConsoleWriterFactory : public IOExtensionFactory {
 		ConsoleWriterFactory();
 	public:
-		explicit ConsoleWriterFactory( const std::string& i_Name
-									  , const std::string& i_Version
-									  , const std::string& i_Author
-									  , const std::string& i_Type
-									  , const std::vector<std::string>& i_Keys );
+		ConsoleWriterFactory();
+		virtual ~ConsoleWriterFactory();
 		
 		virtual IOExtension* New( const boost::property_tree::ptree::value_type& i_Config
 								 , std::mutex& i_LogMutex
