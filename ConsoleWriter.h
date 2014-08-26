@@ -14,13 +14,13 @@
 #include <streamlog/streamlog.h>
 
 // Internal
-#include <Eloquent/Extensions/IOExtension.h>
+#include <Eloquent/Extensions/IO/IO.h>
 
 namespace Eloquent {	
 	///////////////////////////////////////////////////////////////////////////////
-	// ConsoleWriter : IOExtension
+	// ConsoleWriter : IO
 	///////////////////////////////////////////////////////////////////////////////
-	class ConsoleWriter : public IOExtension {
+	class ConsoleWriter : public IO {
 		ConsoleWriter();
 	public:
 		explicit ConsoleWriter( const boost::property_tree::ptree::value_type& i_Config

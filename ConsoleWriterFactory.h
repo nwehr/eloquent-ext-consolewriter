@@ -15,19 +15,18 @@
 #include <boost/property_tree/ptree.hpp>
 
 // Internal
-#include "Eloquent/Extensions/IOExtensionFactory.h"
+#include "Eloquent/Extensions/IO/IOFactory.h"
 
 namespace Eloquent {
 	///////////////////////////////////////////////////////////////////////////////
-	// ConsoleWriterFactory : IOExtensionFactory
+	// ConsoleWriterFactory : IOFactory
 	///////////////////////////////////////////////////////////////////////////////
-	class ConsoleWriterFactory : public IOExtensionFactory {
-		ConsoleWriterFactory();
+	class ConsoleWriterFactory : public IOFactory {
 	public:
 		ConsoleWriterFactory();
 		virtual ~ConsoleWriterFactory();
 		
-		virtual IOExtension* New( const boost::property_tree::ptree::value_type& i_Config
+		virtual IO* New( const boost::property_tree::ptree::value_type& i_Config
 								 , std::mutex& i_LogMutex
 								 , streamlog::severity_log& i_Log
 								 , std::mutex& i_QueueMutex

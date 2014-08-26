@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3256A940-505B-4213-999C-2422D59E2C2C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ConsoleWriter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1851B6355669180C840C956EED5EAAB05AAF573B</key>
+		<string>bitbucket.org:nwehr/eloquent.git</string>
+		<key>7DA04B23188344008B142C8FFD052B78D80B6DE8</key>
+		<string>bitbucket.org:nwehr/eloquent-ext-consolewriter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ConsoleWriter.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1851B6355669180C840C956EED5EAAB05AAF573B</key>
+		<string>../../..</string>
+		<key>7DA04B23188344008B142C8FFD052B78D80B6DE8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:nwehr/eloquent-ext-consolewriter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7DA04B23188344008B142C8FFD052B78D80B6DE8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1851B6355669180C840C956EED5EAAB05AAF573B</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7DA04B23188344008B142C8FFD052B78D80B6DE8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ext-ConsoleWriter</string>
+		</dict>
+	</array>
+</dict>
+</plist>

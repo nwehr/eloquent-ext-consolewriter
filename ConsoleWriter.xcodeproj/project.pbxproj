@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5807154319ACCF98003D483D /* libboost_system-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5807154219ACCF98003D483D /* libboost_system-mt.dylib */; };
+		5807154519ACCF9C003D483D /* libEloquent.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5807154419ACCF9C003D483D /* libEloquent.dylib */; };
+		5807154719ACCFA4003D483D /* libstreamlog.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5807154619ACCFA4003D483D /* libstreamlog.dylib */; };
+		5827E325199D3938006451E4 /* ConsoleWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5827E317199D3938006451E4 /* ConsoleWriter.cpp */; };
+		5827E326199D3938006451E4 /* ConsoleWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5827E318199D3938006451E4 /* ConsoleWriter.h */; };
+		5827E327199D3938006451E4 /* ConsoleWriterAttach.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5827E319199D3938006451E4 /* ConsoleWriterAttach.cpp */; };
+		5827E329199D3938006451E4 /* ConsoleWriterFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5827E31B199D3938006451E4 /* ConsoleWriterFactory.cpp */; };
+		5827E32A199D3938006451E4 /* ConsoleWriterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5827E31C199D3938006451E4 /* ConsoleWriterFactory.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5807154219ACCF98003D483D /* libboost_system-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_system-mt.dylib"; path = "../../../../../../opt/local/lib/libboost_system-mt.dylib"; sourceTree = "<group>"; };
+		5807154419ACCF9C003D483D /* libEloquent.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEloquent.dylib; path = ../../../../../../usr/local/lib/libEloquent.dylib; sourceTree = "<group>"; };
+		5807154619ACCFA4003D483D /* libstreamlog.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libstreamlog.dylib; path = ../../../../../../opt/local/lib/libstreamlog.dylib; sourceTree = "<group>"; };
+		5827E286199D38A3006451E4 /* libConsoleWriter.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libConsoleWriter.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5827E2EF199D3938006451E4 /* cmake_install.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmake_install.cmake; sourceTree = "<group>"; };
+		5827E2F0199D3938006451E4 /* CMakeCache.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeCache.txt; sourceTree = "<group>"; };
+		5827E2F3199D3938006451E4 /* CMakeCCompiler.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeCCompiler.cmake; sourceTree = "<group>"; };
+		5827E2F4199D3938006451E4 /* CMakeCXXCompiler.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeCXXCompiler.cmake; sourceTree = "<group>"; };
+		5827E2F5199D3938006451E4 /* CMakeDetermineCompilerABI_C.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = CMakeDetermineCompilerABI_C.bin; sourceTree = "<group>"; };
+		5827E2F6199D3938006451E4 /* CMakeDetermineCompilerABI_CXX.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = CMakeDetermineCompilerABI_CXX.bin; sourceTree = "<group>"; };
+		5827E2F7199D3938006451E4 /* CMakeSystem.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeSystem.cmake; sourceTree = "<group>"; };
+		5827E2F9199D3938006451E4 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = a.out; sourceTree = "<group>"; };
+		5827E2FA199D3938006451E4 /* CMakeCCompilerId.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CMakeCCompilerId.c; sourceTree = "<group>"; };
+		5827E2FC199D3938006451E4 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = a.out; sourceTree = "<group>"; };
+		5827E2FD199D3938006451E4 /* CMakeCXXCompilerId.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMakeCXXCompilerId.cpp; sourceTree = "<group>"; };
+		5827E2FE199D3938006451E4 /* cmake.check_cache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmake.check_cache; sourceTree = "<group>"; };
+		5827E2FF199D3938006451E4 /* CMakeDirectoryInformation.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeDirectoryInformation.cmake; sourceTree = "<group>"; };
+		5827E300199D3938006451E4 /* CMakeOutput.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeOutput.log; sourceTree = "<group>"; };
+		5827E303199D3938006451E4 /* build.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build.make; sourceTree = "<group>"; };
+		5827E304199D3938006451E4 /* cmake_clean.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmake_clean.cmake; sourceTree = "<group>"; };
+		5827E305199D3938006451E4 /* ConsoleWriter.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = ConsoleWriter.cpp.o; sourceTree = "<group>"; };
+		5827E306199D3938006451E4 /* ConsoleWriterAttach.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = ConsoleWriterAttach.cpp.o; sourceTree = "<group>"; };
+		5827E307199D3938006451E4 /* ConsoleWriterFactory.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = ConsoleWriterFactory.cpp.o; sourceTree = "<group>"; };
+		5827E308199D3938006451E4 /* CXX.includecache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CXX.includecache; sourceTree = "<group>"; };
+		5827E309199D3938006451E4 /* depend.internal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = depend.internal; sourceTree = "<group>"; };
+		5827E30A199D3938006451E4 /* depend.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = depend.make; sourceTree = "<group>"; };
+		5827E30B199D3938006451E4 /* DependInfo.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DependInfo.cmake; sourceTree = "<group>"; };
+		5827E30C199D3938006451E4 /* flags.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flags.make; sourceTree = "<group>"; };
+		5827E30D199D3938006451E4 /* link.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.txt; sourceTree = "<group>"; };
+		5827E30E199D3938006451E4 /* progress.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = progress.make; sourceTree = "<group>"; };
+		5827E30F199D3938006451E4 /* Makefile.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.cmake; sourceTree = "<group>"; };
+		5827E310199D3938006451E4 /* Makefile2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile2; sourceTree = "<group>"; };
+		5827E311199D3938006451E4 /* progress.marks */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = progress.marks; sourceTree = "<group>"; };
+		5827E312199D3938006451E4 /* TargetDirectories.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TargetDirectories.txt; sourceTree = "<group>"; };
+		5827E313199D3938006451E4 /* install_manifest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_manifest.txt; sourceTree = "<group>"; };
+		5827E314199D3938006451E4 /* libConsoleWriter.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libConsoleWriter.dylib; sourceTree = "<group>"; };
+		5827E315199D3938006451E4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		5827E316199D3938006451E4 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		5827E317199D3938006451E4 /* ConsoleWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleWriter.cpp; sourceTree = "<group>"; };
+		5827E318199D3938006451E4 /* ConsoleWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleWriter.h; sourceTree = "<group>"; };
+		5827E319199D3938006451E4 /* ConsoleWriterAttach.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleWriterAttach.cpp; sourceTree = "<group>"; };
+		5827E31B199D3938006451E4 /* ConsoleWriterFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleWriterFactory.cpp; sourceTree = "<group>"; };
+		5827E31C199D3938006451E4 /* ConsoleWriterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleWriterFactory.h; sourceTree = "<group>"; };
+		5827E31D199D3938006451E4 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5827E283199D38A3006451E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5807154319ACCF98003D483D /* libboost_system-mt.dylib in Frameworks */,
+				5807154719ACCFA4003D483D /* libstreamlog.dylib in Frameworks */,
+				5807154519ACCF9C003D483D /* libEloquent.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5827E27D199D38A3006451E4 = {
+			isa = PBXGroup;
+			children = (
+				5807154619ACCFA4003D483D /* libstreamlog.dylib */,
+				5807154419ACCF9C003D483D /* libEloquent.dylib */,
+				5807154219ACCF98003D483D /* libboost_system-mt.dylib */,
+				5827E2ED199D392F006451E4 /* ConsoleWriter */,
+				5827E287199D38A3006451E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5827E287199D38A3006451E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5827E286199D38A3006451E4 /* libConsoleWriter.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5827E2ED199D392F006451E4 /* ConsoleWriter */ = {
+			isa = PBXGroup;
+			children = (
+				5827E2EE199D3938006451E4 /* build */,
+				5827E317199D3938006451E4 /* ConsoleWriter.cpp */,
+				5827E318199D3938006451E4 /* ConsoleWriter.h */,
+				5827E31B199D3938006451E4 /* ConsoleWriterFactory.cpp */,
+				5827E31C199D3938006451E4 /* ConsoleWriterFactory.h */,
+				5827E319199D3938006451E4 /* ConsoleWriterAttach.cpp */,
+				5827E31D199D3938006451E4 /* LICENSE.txt */,
+				5827E316199D3938006451E4 /* CMakeLists.txt */,
+			);
+			name = ConsoleWriter;
+			sourceTree = "<group>";
+		};
+		5827E2EE199D3938006451E4 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				5827E2EF199D3938006451E4 /* cmake_install.cmake */,
+				5827E2F0199D3938006451E4 /* CMakeCache.txt */,
+				5827E2F1199D3938006451E4 /* CMakeFiles */,
+				5827E313199D3938006451E4 /* install_manifest.txt */,
+				5827E314199D3938006451E4 /* libConsoleWriter.dylib */,
+				5827E315199D3938006451E4 /* Makefile */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		5827E2F1199D3938006451E4 /* CMakeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5827E2F2199D3938006451E4 /* 3.0.0 */,
+				5827E2FE199D3938006451E4 /* cmake.check_cache */,
+				5827E2FF199D3938006451E4 /* CMakeDirectoryInformation.cmake */,
+				5827E300199D3938006451E4 /* CMakeOutput.log */,
+				5827E301199D3938006451E4 /* CMakeTmp */,
+				5827E302199D3938006451E4 /* ConsoleWriter.dir */,
+				5827E30F199D3938006451E4 /* Makefile.cmake */,
+				5827E310199D3938006451E4 /* Makefile2 */,
+				5827E311199D3938006451E4 /* progress.marks */,
+				5827E312199D3938006451E4 /* TargetDirectories.txt */,
+			);
+			path = CMakeFiles;
+			sourceTree = "<group>";
+		};
+		5827E2F2199D3938006451E4 /* 3.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				5827E2F3199D3938006451E4 /* CMakeCCompiler.cmake */,
+				5827E2F4199D3938006451E4 /* CMakeCXXCompiler.cmake */,
+				5827E2F5199D3938006451E4 /* CMakeDetermineCompilerABI_C.bin */,
+				5827E2F6199D3938006451E4 /* CMakeDetermineCompilerABI_CXX.bin */,
+				5827E2F7199D3938006451E4 /* CMakeSystem.cmake */,
+				5827E2F8199D3938006451E4 /* CompilerIdC */,
+				5827E2FB199D3938006451E4 /* CompilerIdCXX */,
+			);
+			path = 3.0.0;
+			sourceTree = "<group>";
+		};
+		5827E2F8199D3938006451E4 /* CompilerIdC */ = {
+			isa = PBXGroup;
+			children = (
+				5827E2F9199D3938006451E4 /* a.out */,
+				5827E2FA199D3938006451E4 /* CMakeCCompilerId.c */,
+			);
+			path = CompilerIdC;
+			sourceTree = "<group>";
+		};
+		5827E2FB199D3938006451E4 /* CompilerIdCXX */ = {
+			isa = PBXGroup;
+			children = (
+				5827E2FC199D3938006451E4 /* a.out */,
+				5827E2FD199D3938006451E4 /* CMakeCXXCompilerId.cpp */,
+			);
+			path = CompilerIdCXX;
+			sourceTree = "<group>";
+		};
+		5827E301199D3938006451E4 /* CMakeTmp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CMakeTmp;
+			sourceTree = "<group>";
+		};
+		5827E302199D3938006451E4 /* ConsoleWriter.dir */ = {
+			isa = PBXGroup;
+			children = (
+				5827E303199D3938006451E4 /* build.make */,
+				5827E304199D3938006451E4 /* cmake_clean.cmake */,
+				5827E305199D3938006451E4 /* ConsoleWriter.cpp.o */,
+				5827E306199D3938006451E4 /* ConsoleWriterAttach.cpp.o */,
+				5827E307199D3938006451E4 /* ConsoleWriterFactory.cpp.o */,
+				5827E308199D3938006451E4 /* CXX.includecache */,
+				5827E309199D3938006451E4 /* depend.internal */,
+				5827E30A199D3938006451E4 /* depend.make */,
+				5827E30B199D3938006451E4 /* DependInfo.cmake */,
+				5827E30C199D3938006451E4 /* flags.make */,
+				5827E30D199D3938006451E4 /* link.txt */,
+				5827E30E199D3938006451E4 /* progress.make */,
+			);
+			path = ConsoleWriter.dir;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5827E284199D38A3006451E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5827E326199D3938006451E4 /* ConsoleWriter.h in Headers */,
+				5827E32A199D3938006451E4 /* ConsoleWriterFactory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5827E285199D38A3006451E4 /* ConsoleWriter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5827E28A199D38A3006451E4 /* Build configuration list for PBXNativeTarget "ConsoleWriter" */;
+			buildPhases = (
+				5827E282199D38A3006451E4 /* Sources */,
+				5827E283199D38A3006451E4 /* Frameworks */,
+				5827E284199D38A3006451E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConsoleWriter;
+			productName = ConsoleWriter;
+			productReference = 5827E286199D38A3006451E4 /* libConsoleWriter.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5827E27E199D38A3006451E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "EvriChart, Inc.";
+				TargetAttributes = {
+					5827E285199D38A3006451E4 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 5827E281199D38A3006451E4 /* Build configuration list for PBXProject "ConsoleWriter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5827E27D199D38A3006451E4;
+			productRefGroup = 5827E287199D38A3006451E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5827E285199D38A3006451E4 /* ConsoleWriter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5827E282199D38A3006451E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5827E325199D3938006451E4 /* ConsoleWriter.cpp in Sources */,
+				5827E329199D3938006451E4 /* ConsoleWriterFactory.cpp in Sources */,
+				5827E327199D3938006451E4 /* ConsoleWriterAttach.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5827E288199D38A3006451E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/opt/local/include,
+					/usr/include,
+					/usr/local/include,
+					/usr/local/include/Eloquent,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib,
+					/usr/lib,
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5827E289199D38A3006451E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/opt/local/include,
+					/usr/include,
+					/usr/local/include,
+					/usr/local/include/Eloquent,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib,
+					/usr/lib,
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5827E28B199D38A3006451E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5827E28C199D38A3006451E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5827E281199D38A3006451E4 /* Build configuration list for PBXProject "ConsoleWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5827E288199D38A3006451E4 /* Debug */,
+				5827E289199D38A3006451E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5827E28A199D38A3006451E4 /* Build configuration list for PBXNativeTarget "ConsoleWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5827E28B199D38A3006451E4 /* Debug */,
+				5827E28C199D38A3006451E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5827E27E199D38A3006451E4 /* Project object */;
+}
