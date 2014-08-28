@@ -6,12 +6,12 @@
 // See LICENSE.txt
 //
 
+// C
+#include <syslog.h>
+
 // Boost
 #include <boost/property_tree/ptree.hpp>
 #include <boost/smart_ptr.hpp>
-
-// External
-#include <streamlog/streamlog.h>
 
 // Internal
 #include <Eloquent/Extensions/IO/IO.h>
@@ -24,8 +24,6 @@ namespace Eloquent {
 		ConsoleWriter();
 	public:
 		explicit ConsoleWriter( const boost::property_tree::ptree::value_type& i_Config
-							   , std::mutex& i_LogMutex
-							   , streamlog::severity_log& i_Log
 							   , std::mutex& i_QueueMutex
 							   , std::condition_variable& i_QueueCV
 							   , std::queue<QueueItem>& i_Queue

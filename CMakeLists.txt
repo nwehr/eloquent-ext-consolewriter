@@ -48,7 +48,6 @@ set( lib
 	${Boost_SYSTEM_LIBRARY}
 	${Boost_FILESYSTEM_LIBRARY}
 	${Boost_REGEX_LIBRARY}
-	streamlog
 	Eloquent
 )
 
