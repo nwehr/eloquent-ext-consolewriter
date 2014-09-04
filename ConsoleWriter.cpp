@@ -22,7 +22,7 @@ Eloquent::ConsoleWriter::ConsoleWriter( const boost::property_tree::ptree::value
 									   , std::mutex& i_QueueMutex
 									   , std::condition_variable& i_QueueCV
 									   , std::queue<QueueItem>& i_Queue
-									   , int& i_NumWriters )
+									   , unsigned int& i_NumWriters )
 : IO( i_Config, i_QueueMutex, i_QueueCV, i_Queue, i_NumWriters )
 {
 	syslog( LOG_INFO, "setting up a writer #Comment #Writer #ConsoleWriter" );

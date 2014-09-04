@@ -27,7 +27,7 @@ namespace Eloquent {
 							   , std::mutex& i_QueueMutex
 							   , std::condition_variable& i_QueueCV
 							   , std::queue<QueueItem>& i_Queue
-							   , int& i_NumWriters );
+							   , unsigned int& i_NumWriters );
 
 		virtual ~ConsoleWriter();
 		virtual void operator()();
