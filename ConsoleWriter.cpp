@@ -8,10 +8,6 @@
 #include <mutex>
 #include <iostream>
 
-// Boost
-#include <boost/foreach.hpp>
-#include <boost/lexical_cast.hpp>
-
 // Internal
 #include "ConsoleWriter.h"
 
@@ -36,8 +32,7 @@ void Eloquent::ConsoleWriter::operator()() {
 	while( true ) {
 		try {
 			QueueItem& Item = NextQueueItem();
-			std::cout << Item.Data();
-			PopQueueItem();
+			std::cout << Item.Data() << std::endl;
 			
 		} catch( const std::exception& e ) {
 			syslog( LOG_ERR, "%s #Error #Writer #ConsoleWriter", e.what() );

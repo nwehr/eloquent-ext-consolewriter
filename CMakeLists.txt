@@ -3,25 +3,17 @@
 ##############################################################################
 cmake_minimum_required( VERSION 2.8 )
 
-project( eloquentd )
-
-ADD_DEFINITIONS( -std=c++11 )
-
 set( target ConsoleWriter )
+
+set( CMAKE_CXX_FLAGS                "-Wall -std=c++11" )
+set( CMAKE_CXX_FLAGS_DEBUG          "-g" )
+set( CMAKE_CXX_FLAGS_MINSIZEREL     "-Os -DNDEBUG" )
+set( CMAKE_CXX_FLAGS_RELEASE        "-O4 -DNDEBUG" )
+set( CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g" )
 
 ##############################################################################
 # Header Search Paths
 ##############################################################################
-set(Boost_USE_STATIC_LIBS        OFF)
-set(Boost_USE_MULTITHREADED      ON)
-set(Boost_USE_STATIC_RUNTIME	 OFF)
-
-find_package( Boost 1.55.0 COMPONENTS system filesystem thread regex program_options )
-
-if(Boost_FOUND)
-	include_directories( ${Boost_INCLUDE_DIRS} )
-endif()
-
 include_directories( "${PROJECT_SOURCE_DIR}/Internal" )
 include_directories( "${PROJECT_SOURCE_DIR}/External" )
 
@@ -40,16 +32,9 @@ link_directories( "/opt/local/lib" )
 ##############################################################################
 # Build
 ##############################################################################
-file( GLOB src
-	"${PROJECT_SOURCE_DIR}/*.cpp"
-)
+file( GLOB src "${PROJECT_SOURCE_DIR}/*.cpp" )
 
-set( lib
-	${Boost_SYSTEM_LIBRARY}
-	${Boost_FILESYSTEM_LIBRARY}
-	${Boost_REGEX_LIBRARY}
-	Eloquent
-)
+set( lib Eloquent )
 
 add_library( ${target} SHARED ${src} )
 target_link_libraries( ${target} ${lib} )

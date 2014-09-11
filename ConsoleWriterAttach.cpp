@@ -4,9 +4,9 @@
 //
 
 // Internal
-#include "Eloquent/Attach.h"
 #include "ConsoleWriterFactory.h"
 
+extern "C" void* Attach( void );
 extern "C" void* Attach( void ) {
 	return new Eloquent::ConsoleWriterFactory();
 }
