@@ -20,13 +20,9 @@ Eloquent::ConsoleWriter::ConsoleWriter( const boost::property_tree::ptree::value
 									   , std::queue<QueueItem>& i_Queue
 									   , unsigned int& i_NumWriters )
 : IO( i_Config, i_QueueMutex, i_QueueCV, i_Queue, i_NumWriters )
-{
-	syslog( LOG_INFO, "setting up a writer #Comment #Writer #ConsoleWriter" );
-}
+{}
 
-Eloquent::ConsoleWriter::~ConsoleWriter() {
-	syslog( LOG_INFO, "shutting down a writer #Comment #Writer #ConsoleWriter" );
-}
+Eloquent::ConsoleWriter::~ConsoleWriter() {}
 
 void Eloquent::ConsoleWriter::operator()() {
 	while( true ) {

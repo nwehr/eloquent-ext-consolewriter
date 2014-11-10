@@ -19,6 +19,5 @@ Eloquent::IO* Eloquent::ConsoleWriterFactory::New( const boost::property_tree::p
 														   , std::queue<QueueItem>& i_Queue
 														   , unsigned int& i_NumWriters )
 {
-	syslog( LOG_DEBUG, "returning new reader #Comment #Factory #ConsoleWriterFactory" );
 	return new ConsoleWriter( i_Config, i_QueueMutex, i_QueueCV, i_Queue, i_NumWriters );
 }

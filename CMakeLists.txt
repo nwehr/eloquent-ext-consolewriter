@@ -17,17 +17,18 @@ set( CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g" )
 include_directories( "${PROJECT_SOURCE_DIR}/Internal" )
 include_directories( "${PROJECT_SOURCE_DIR}/External" )
 
-include_directories( "/usr/include" )
-include_directories( "/usr/local/include" )
 include_directories( "/opt/local/include" )
+include_directories( "/usr/local/include" )
 include_directories( "/usr/local/include/Eloquent" )
+include_directories( "/usr/include" )
 
 ##############################################################################
 # Library Search Paths
 ##############################################################################
-link_directories( "/usr/lib" )
-link_directories( "/usr/local/lib" )
 link_directories( "/opt/local/lib" )
+link_directories( "/usr/local/lib" )
+link_directories( "/usr/lib" )
+
 
 ##############################################################################
 # Build
